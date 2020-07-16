@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/198cd6dc1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>To-do List</h1>
+    </header>
+
+    <div class="main-container">
+
+        <div class="top">
+            <div class="check-all">Check all tasks</div>
+            <div class="task">Task left : <span id="counter">0</span></div>
+        </div>
+
+        <form>
+            <input type="text" id="input" class="todo-input" placeholder="Type your to-do list">
+            <button type="submit" id="addButton" class="add-btn">
+                <i class="far fa-plus-square"></i>
+            </button>
+        </form>
+
+        <div class="list-container">
+            <ul class="todo-list"></ul>
+        </div>
+
+        <!-- <li class="list-item">
+            <button class="check-button"></button>
+            <div class="todo-text"></div>
+            <button class="delete-button"></button>
+        </li> -->
+
+        <footer>            
+            <div class="filters">
+                <input type="radio" id="all" name="filter" value="all">
+                <label for="all">All</label>
+                <input type="radio" id="checked" name="filter" value="checked">
+                <label for="checked">Completed</label>
+                <input type="radio" id="unchecked" name="filter" value="unchecked">
+                <label for="unchecked">Incomplete</label>
+            </div>
+        </footer>
+    
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
